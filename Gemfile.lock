@@ -145,6 +145,3 @@ DEPENDENCIES
   simplexml_parser!
   tailor (~> 1.1.2)
   webmock
-
-BUNDLED WITH
-   1.10.6

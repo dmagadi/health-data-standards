@@ -18,7 +18,7 @@ class Medication < Entry
   field :deliveryMethod, as: :delivery_method, type: Hash
   field :patientInstructions, as: :patient_instructions, type: String
   field :doseIndicator, as: :dose_indicator, type: String
-
+  
   field :method ,   type: Hash 
   field :active_datetime ,  type: Integer
   field :signed_datetime ,  type: Integer

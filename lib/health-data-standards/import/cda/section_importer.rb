@@ -188,6 +188,21 @@ module HealthDataStandards
             end
           end
         end
+        # This method is added by Dhirenra Magadi (dhirendrams@gmail.com) for parsing the reason for medications which is 
+        # required for 0421
+ 
+        def extract_reason(parent_element, medication,code_xpath, nrh = NarrativeReferenceHandler.new)
+          reason_element = parent_element.at_xpath(code_xpath)
+          if reason_element
+            reason = Entry.new
+            extract_codes(reason_element, reason)
+            extract_reason_description(reason_element, reason, nrh)
+            extract_status(reason_element, reason)
+            extract_dates(reason_element, reason)
+            medication.reason = reason
+          end
+        end
+
 
         def extract_code(parent_element, code_xpath, code_system=nil)
           code_element = parent_element.at_xpath(code_xpath)
