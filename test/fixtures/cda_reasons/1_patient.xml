@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="DOCCLIN" moodCode="EVN" xmlns="urn:hl7-org:v3">
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+  <templateId root="2.16.840.1.113883.10.20.24.1.1" />
+  <templateId root="2.16.840.1.113883.10.20.24.1.2" />
+  <id root="1F7B02B9-AEEE-4ADA-8F3A-5A33319D383A" />
+  <code code="55182-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <title mediaType="text/plain" representation="TXT">QRDA Incidence Report</title>
+  <effectiveTime value="20151201" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" displayName="normal" />
+  <languageCode code="en-US" />
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id root="2.16.840.1.113883.4.1" extension="c94989a4b60f426b8c306ef20c35ba79" />
+      <addr use="HP">
+        <streetAddressLine partType="SAL">777 Nugget St.</streetAddressLine>
+        <city partType="CTY">Placerville</city>
+        <state partType="STA">CA</state>
+        <postalCode partType="ZIP">95667</postalCode>
+        <country partType="CNT">US</country>
+      </addr>
+      <telecom value="" use="HP" />
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given partType="GIV">One</given>
+          <family partType="FAM">Patient</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" displayName="Female" />
+        <birthTime value="19810203" />
+        <raceCode nullFlavor="UNK" />
+        <ethnicGroupCode nullFlavor="UNK" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20151201150726.372-0800" />
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" extension="1234567" />
+      <code code="111N00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC" displayName="Chiropractic Providers" />
+      <addr use="HP">
+        <streetAddressLine partType="SAL">1515 Chiro Ave</streetAddressLine>
+        <city partType="CTY">Chiroville</city>
+        <state partType="STA">CA</state>
+        <postalCode partType="ZIP">99999</postalCode>
+        <country partType="CNT">US</country>
+      </addr>
+      <telecom value="tel:+1-515-555-5555" use="WP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name />
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <informant typeCode="INF" contextControlCode="OP">
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.19.5" />
+      <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="1.1.1.1.1.1.1.1.2" />
+        <name>Wellness Chiropractic</name>
+        <telecom value="tel:+1-515-555-5555" />
+        <addr>
+          <streetAddressLine partType="SAL">1515 Chiro Ave</streetAddressLine>
+          <city partType="CTY">Chiroville</city>
+          <state partType="STA">CA</state>
+          <postalCode partType="ZIP">99999</postalCode>
+          <country partType="CNT">US</country>
+        </addr>
+      </representedOrganization>
+    </assignedEntity>
+  </informant>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="1.1.1.1.1.1.1.1.2" />
+        <name>Wellness Chiropractic</name>
+        <telecom value="tel:+1-515-555-5555" use="WP" />
+        <addr>
+          <streetAddressLine partType="SAL">1515 Chiro Ave</streetAddressLine>
+          <city partType="CTY">Chiroville</city>
+          <state partType="STA">CA</state>
+          <postalCode partType="ZIP">99999</postalCode>
+          <country partType="CNT">US</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator typeCode="LA" contextControlCode="OP">
+    <time value="20151201" />
+    <signatureCode code="S" />
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" extension="1234567" />
+      <addr>
+        <streetAddressLine partType="SAL">1515 Chiro Ave</streetAddressLine>
+        <city partType="CTY">Chiroville</city>
+        <state partType="STA">CA</state>
+        <postalCode partType="ZIP">99999</postalCode>
+        <country partType="CNT">US</country>
+      </addr>
+      <telecom value="tel:+1-515-555-5555" use="WP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name />
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="PCPR" moodCode="EVN">
+      <effectiveTime>
+        <low value="20150101" />
+        <high value="20151231" />
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <time>
+          <low value="20150101" />
+          <high value="20151231" />
+        </time>
+        <assignedEntity classCode="ASSIGNED">
+          <id root="2.16.840.1.113883.4.6" extension="111111111" />
+          <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.4.2" extension="1234567" />
+            <id root="2.16.840.1.113883.4.336" extension="54321" />
+          </representedOrganization>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <component typeCode="COMP">
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.24.2.2" />
+          <templateId root="2.16.840.1.113883.10.20.24.2.3" />
+          <code code="55186-1" codeSystem="2.16.840.1.113883.6.1" />
+          <title mediaType="text/plain" representation="TXT">Measure Section</title>
+          <text mediaType="text/x-hl7-text+xml">
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>eMeasure Title</th>
+            <th>Version neutral identifier</th>
+            <th>eMeasure Version Number</th>
+            <th>Version specific identifier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Controlling High Blood Pressure</td>
+            <td>ABDC37CC-BAC6-4156-9B91-D1BE2C8B7268</td>
+            <td>2</td>
+            <td>40280381-3D61-56A7-013E-66BC02DA4DEE</td>
+            <td/>
+        </tr>
+        <tr>
+            <td>Documentation of Current Medications in the Medical Record</td>
+            <td>9A032D9C-3D9B-11E1-8634-00237D5BF174</td>
+            <td>3</td>
+            <td>40280381-3E93-D1AF-013E-A36090B72CC8</td>
+            <td/>
+        </tr>
+        <tr>
+            <td>Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up</td>
+            <td>9A031BB8-3D9B-11E1-8634-00237D5BF174</td>
+            <td>2</td>
+            <td>40280381-3E93-D1AF-013E-D6E2B772150D</td>
+            <td/>
+        </tr>
+        <tr>
+            <td>Functional Status Assessment for Complex Chronic Conditions</td>
+            <td>BB9B8EF7-0354-40E0-BEC7-D6891B7DF519</td>
+            <td>3</td>
+            <td>40280381-3E93-D1AF-013E-A49CA9F94008</td>
+            <td/>
+        </tr>
+        <tr>
+            <td>Closing the referral loop: receipt of specialist report</td>
+            <td>F58FC0D6-EDF5-416A-8D29-79AFBFD24DEA</td>
+            <td>2</td>
+            <td>40280381-3D61-56A7-013E-7AA509DE6258</td>
+            <td/>
+        </tr>
+        <tr>
+            <td>Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents</td>
+            <td>0B63F730-25D6-4248-B11F-8C09C66A04EB</td>
+            <td>2</td>
+            <td>40280381-3D61-56A7-013E-5D530FD26D47</td>
+            <td/>
+        </tr>
+        <tr>
+            <td>Appropriate Testing for Children with Pharyngitis</td>
+            <td>BEB1C33C-2549-4E7F-9567-05ED38448464</td>
+            <td>2</td>
+            <td>40280381-3D61-56A7-013E-5D1EF9B76A48</td>
+            <td/>
+        </tr>
+        <tr>
+            <td>Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention</td>
+            <td>E35791DF-5B25-41BB-B260-673337BC44A8</td>
+            <td>2</td>
+            <td>40280381-3D61-56A7-013E-5CD94A4D64FA</td>
+            <td/>
+        </tr>
+        <tr>
+            <td>Use of Imaging Studies for Low Back Pain</td>
+            <td>B6016B47-B65D-4BE0-866F-1D397886CA89</td>
+            <td>3</td>
+            <td>40280381-3D61-56A7-013E-62790FE42CA1</td>
+            <td/>
+        </tr>
+    </tbody>
+</table>
+</text>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3D61-56A7-013E-66BC02DA4DEE" />
+                  <text representation="TXT" mediaType="text/plain">Controlling High Blood Pressure</text>
+                  <setId root="ABDC37CC-BAC6-4156-9B91-D1BE2C8B7268" />
+                  <versionNumber value="2" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3E93-D1AF-013E-A36090B72CC8" />
+                  <text representation="TXT" mediaType="text/plain">Documentation of Current Medications in the Medical Record</text>
+                  <setId root="9A032D9C-3D9B-11E1-8634-00237D5BF174" />
+                  <versionNumber value="3" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3E93-D1AF-013E-D6E2B772150D" />
+                  <text representation="TXT" mediaType="text/plain">Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up</text>
+                  <setId root="9A031BB8-3D9B-11E1-8634-00237D5BF174" />
+                  <versionNumber value="2" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3E93-D1AF-013E-A49CA9F94008" />
+                  <text representation="TXT" mediaType="text/plain">Functional Status Assessment for Complex Chronic Conditions</text>
+                  <setId root="BB9B8EF7-0354-40E0-BEC7-D6891B7DF519" />
+                  <versionNumber value="3" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3D61-56A7-013E-7AA509DE6258" />
+                  <text representation="TXT" mediaType="text/plain">Closing the referral loop: receipt of specialist report</text>
+                  <setId root="F58FC0D6-EDF5-416A-8D29-79AFBFD24DEA" />
+                  <versionNumber value="2" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3D61-56A7-013E-5D530FD26D47" />
+                  <text representation="TXT" mediaType="text/plain">Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents</text>
+                  <setId root="0B63F730-25D6-4248-B11F-8C09C66A04EB" />
+                  <versionNumber value="2" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3D61-56A7-013E-5D1EF9B76A48" />
+                  <text representation="TXT" mediaType="text/plain">Appropriate Testing for Children with Pharyngitis</text>
+                  <setId root="BEB1C33C-2549-4E7F-9567-05ED38448464" />
+                  <versionNumber value="2" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3D61-56A7-013E-5CD94A4D64FA" />
+                  <text representation="TXT" mediaType="text/plain">Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention</text>
+                  <setId root="E35791DF-5B25-41BB-B260-673337BC44A8" />
+                  <versionNumber value="2" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.98" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.97" />
+              <statusCode code="completed" />
+              <reference typeCode="REFR">
+                <externalDocument classCode="DOC" moodCode="EVN">
+                  <id root="40280381-3D61-56A7-013E-62790FE42CA1" />
+                  <text representation="TXT" mediaType="text/plain">Use of Imaging Studies for Low Back Pain</text>
+                  <setId root="B6016B47-B65D-4BE0-866F-1D397886CA89" />
+                  <versionNumber value="3" />
+                </externalDocument>
+              </reference>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.17.2.1" />
+          <code code="55187-9" codeSystem="2.16.840.1.113883.6.1" />
+          <title mediaType="text/plain" representation="TXT" language="en-US">Reporting Parameters</title>
+          <text mediaType="text/x-hl7-text+xml"><list><item>Reporting Period: Thursday, January 01, 2015 12:00:00 AM - Thursday, December 31, 2015 11:59:59 PM</item></list></text>
+          <entry typeCode="DRIV">
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.17.3.8" />
+              <code code="252116004" codeSystem="2.16.840.1.113883.6.96" displayName="Observation Parameters" />
+              <effectiveTime>
+                <low value="20150101000000.000" />
+                <high value="20151231235959.000" />
+              </effectiveTime>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.17.2.4" />
+          <templateId root="2.16.840.1.113883.10.20.24.2.1" />
+          <code code="55188-7" codeSystem="2.16.840.1.113883.6.1" />
+          <title mediaType="text/plain" representation="TXT">Patient Data</title>
+          <text representation="TXT" mediaType="text/plain" />
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.23" />
+              <id root="1.3.6.1.4.1.115" extension="15a9fbea40c047278085b362d62e429a" />
+              <code code="99201" codeSystem="2.16.840.1.113883.6.12" displayName="ambulatory">
+                <originalText representation="TXT" mediaType="text/plain">Encounter, Performed: Office Visit (Code List: 2.16.840.1.113883.3.464.1003.101.12.1001)</originalText>
+              </code>
+              <text representation="TXT" mediaType="text/plain">Encounter, Performed: Office Visit (Code List: 2.16.840.1.113883.3.464.1003.101.12.1001)</text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151110" />
+                <high value="20151110" />
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry>
+            <encounter classCode="ENC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.49" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.23" />
+              <id root="1.3.6.1.4.1.115" extension="fda02bec91e84664ae3de55cb0370431" />
+              <code code="99201" codeSystem="2.16.840.1.113883.6.12" displayName="ambulatory">
+                <originalText representation="TXT" mediaType="text/plain">Encounter, Performed: Office Visit (Code List: 2.16.840.1.113883.3.464.1003.101.12.1001)</originalText>
+              </code>
+              <text representation="TXT" mediaType="text/plain">Encounter, Performed: Office Visit (Code List: 2.16.840.1.113883.3.464.1003.101.12.1001)</text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151201" />
+                <high value="20151201" />
+              </effectiveTime>
+            </encounter>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.57" />
+              <id root="1.3.6.1.4.1.115" extension="2b9c226de1fc42cf9f05b9b41fbd5204" />
+              <code code="3137-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText representation="TXT" mediaType="text/plain" language="en-US">Physical Exam, Finding: Body height Measured (Code List: 2.16.840.1.113883.3.464.1003.121.12.1014)</originalText>
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151110" />
+                <high value="20151110" />
+              </effectiveTime>
+              <value xsi:type="PQ" unit="inch" value="66" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.57" />
+              <id root="1.3.6.1.4.1.115" extension="d0ec56d415e44deaadb0af2a1203f83e" />
+              <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText representation="TXT" mediaType="text/plain" language="en-US">Physical Exam, Finding: Body weight Measured (Code List: 2.16.840.1.113883.3.464.1003.121.12.1015)</originalText>
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151110" />
+                <high value="20151110" />
+              </effectiveTime>
+              <value xsi:type="PQ" unit="pound" value="82" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.57" />
+              <id root="1.3.6.1.4.1.115" extension="8bf4914f61714204a51c302214fdc1e1" />
+              <code code="39156-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText representation="TXT" mediaType="text/plain" language="en-US">Physical Exam, Finding: Body mass index (BMI) (Code List: 2.16.840.1.113883.3.600.1.681)</originalText>
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151110" />
+                <high value="20151110" />
+              </effectiveTime>
+              <value xsi:type="PQ" unit="kg/m2" value="13" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.57" />
+              <id root="1.3.6.1.4.1.115" extension="064e9a90166b4eddacb5e59600991cd0" />
+              <code code="59574-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText representation="TXT" mediaType="text/plain" language="en-US">Physical Exam, Finding: Body mass index (BMI) percentile (Code List: 2.16.840.1.113883.3.464.1003.121.12.1012)</originalText>
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151110" />
+                <high value="20151110" />
+              </effectiveTime>
+              <value xsi:type="PQ" nullFlavor="DER" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.57" />
+              <id root="1.3.6.1.4.1.115" extension="b548813189274acfa78299e87d8ce30b" />
+              <code code="3137-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText representation="TXT" mediaType="text/plain" language="en-US">Physical Exam, Finding: Body height Measured (Code List: 2.16.840.1.113883.3.464.1003.121.12.1014)</originalText>
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151201" />
+                <high value="20151201" />
+              </effectiveTime>
+              <value xsi:type="PQ" unit="inch" value="64" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.57" />
+              <id root="1.3.6.1.4.1.115" extension="3d9d270a6f8f4e1bb2543ccb2c3df84b" />
+              <code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText representation="TXT" mediaType="text/plain" language="en-US">Physical Exam, Finding: Body weight Measured (Code List: 2.16.840.1.113883.3.464.1003.121.12.1015)</originalText>
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151201" />
+                <high value="20151201" />
+              </effectiveTime>
+              <value xsi:type="PQ" unit="pound" value="61" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.57" />
+              <id root="1.3.6.1.4.1.115" extension="8384ffe1ba344a67a17709a6e21d273b" />
+              <code code="39156-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText representation="TXT" mediaType="text/plain" language="en-US">Physical Exam, Finding: Body mass index (BMI) (Code List: 2.16.840.1.113883.3.600.1.681)</originalText>
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151201" />
+                <high value="20151201" />
+              </effectiveTime>
+              <value xsi:type="PQ" unit="kg/m2" value="10" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.57" />
+              <id root="1.3.6.1.4.1.115" extension="e6620191797b42ca97f5f1c2e31bd35a" />
+              <code code="59574-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
+                <originalText representation="TXT" mediaType="text/plain" language="en-US">Physical Exam, Finding: Body mass index (BMI) percentile (Code List: 2.16.840.1.113883.3.464.1003.121.12.1012)</originalText>
+              </code>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151201" />
+                <high value="20151201" />
+              </effectiveTime>
+              <value xsi:type="PQ" nullFlavor="DER" />
+            </observation>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.41" />
+              <id root="1.3.6.1.4.1.115" extension="525a1a1d145d447388f7a9b8d66a9098" />
+              <text representation="TXT" mediaType="text/plain">Medication, Active: Below Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1499)</text>
+              <statusCode code="active" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20151110" />
+                <high value="20151110" />
+              </effectiveTime>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <id />
+                  <manufacturedLabeledDrug classCode="MMAT">
+                    <code code="577154" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM" codeSystemVersion="2013-02">
+                      <originalText representation="TXT" mediaType="text/plain">Medication, Active: Below Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1499)</originalText>
+                    </code>
+                  </manufacturedLabeledDrug>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.41" />
+              <id root="1.3.6.1.4.1.115" extension="66a3e05bdc364c4c9af2d72b462c4c09" />
+              <text representation="TXT" mediaType="text/plain">Medication, Active: Below Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1499)</text>
+              <statusCode code="active" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20151117" />
+                <high value="20151117" />
+              </effectiveTime>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <id />
+                  <manufacturedLabeledDrug classCode="MMAT">
+                    <code code="577154" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM" codeSystemVersion="2013-02">
+                      <originalText representation="TXT" mediaType="text/plain">Medication, Active: Below Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1499)</originalText>
+                    </code>
+                  </manufacturedLabeledDrug>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.41" />
+              <id root="1.3.6.1.4.1.115" extension="32c67584eb024fb2a19dbe1453024d9f" />
+              <text representation="TXT" mediaType="text/plain">Medication, Active: Above Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1498)</text>
+              <statusCode code="active" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20151117" />
+                <high value="20151117" />
+              </effectiveTime>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <id />
+                  <manufacturedLabeledDrug classCode="MMAT">
+                    <code code="692876" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM" codeSystemVersion="2013-02">
+                      <originalText representation="TXT" mediaType="text/plain">Medication, Active: Above Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1498)</originalText>
+                    </code>
+                  </manufacturedLabeledDrug>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.42" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.47" />
+              <id root="1.3.6.1.4.1.115" extension="2882150972e04c3ca0f5c52fa1e9ea71" />
+              <text representation="TXT" mediaType="text/plain">Medication, Order: Below Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1499)</text>
+              <statusCode code="new" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20151110120000" />
+                <high value="20151110120000" />
+              </effectiveTime>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code code="577154" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM" codeSystemVersion="2013-02">
+                      <originalText representation="TXT" mediaType="text/plain">Medication, Order: Below Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1499)</originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.24.3.88" />
+                  <code code="410666004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Reason" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20151110120000" />
+                  <value xsi:type="CD" code="248342006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Underweight (finding)" />
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.42" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.47" />
+              <id root="1.3.6.1.4.1.115" extension="2237670e32e34b19a0cfe2eddb18a4ac" />
+              <text representation="TXT" mediaType="text/plain">Medication, Order: Below Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1499)</text>
+              <statusCode code="new" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20151117120000" />
+                <high value="20151117120000" />
+              </effectiveTime>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code code="577154" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM" codeSystemVersion="2013-02">
+                      <originalText representation="TXT" mediaType="text/plain">Medication, Order: Below Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1499)</originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.24.3.88" />
+                  <code code="410666004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Reason" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20151117120000" />
+                  <value xsi:type="CD" code="248342006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Underweight (finding)" />
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.42" />
+              <templateId root="2.16.840.1.113883.10.20.24.3.47" />
+              <id root="1.3.6.1.4.1.115" extension="9541a21b06c44a0384d70b6a86f9a6a3" />
+              <text representation="TXT" mediaType="text/plain">Medication, Order: Above Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1498)</text>
+              <statusCode code="new" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20151117120000" />
+                <high value="20151117120000" />
+              </effectiveTime>
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code code="692876" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RXNORM" codeSystemVersion="2013-02">
+                      <originalText representation="TXT" mediaType="text/plain">Medication, Order: Above Normal Medications (Code List: 2.16.840.1.113883.3.600.1.1498)</originalText>
+                    </code>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="RSON">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.24.3.88" />
+                  <code code="410666004" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Reason" />
+                  <statusCode code="completed" />
+                  <effectiveTime value="20151117120000" />
+                  <value xsi:type="CD" code="238131007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Overweight (finding)" />
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.64" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+              <id root="1.3.6.1.4.1.115" extension="f1d2e021b2084ad0b12f2b8a116ff280" />
+              <code code="428191000124101" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <originalText representation="TXT" mediaType="text/plain">Procedure, Performed: Current Medications Documented SNMD (Code List: 2.16.840.1.113883.3.600.1.462)</originalText>
+              </code>
+              <text representation="TXT" mediaType="text/plain" language="en-US">Procedure, Performed: Current Medications Documented SNMD (Code List: 2.16.840.1.113883.3.600.1.462)</text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151110" />
+                <high value="20151110" />
+              </effectiveTime>
+            </procedure>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.64" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.14" />
+              <id root="1.3.6.1.4.1.115" extension="d06b1c30980f416c9e52798daf238e3c" />
+              <code code="428191000124101" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                <originalText representation="TXT" mediaType="text/plain">Procedure, Performed: Current Medications Documented SNMD (Code List: 2.16.840.1.113883.3.600.1.462)</originalText>
+              </code>
+              <text representation="TXT" mediaType="text/plain" language="en-US">Procedure, Performed: Current Medications Documented SNMD (Code List: 2.16.840.1.113883.3.600.1.462)</text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20151201" />
+                <high value="20151201" />
+              </effectiveTime>
+            </procedure>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.24.3.55" />
+              <id root="1.3.6.1.4.1.115" extension="31f1ee34910c4f17863a17fa395757a6" />
+              <code code="48768-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Payment source" />
+              <statusCode code="completed" />
+              <value xsi:type="CD" code="9999" codeSystem="2.16.840.1.113883.3.221.5" codeSystemName="SOP" codeSystemVersion="5.0" displayName="Unavailable / Unknown" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
