@@ -19,6 +19,7 @@ module HealthDataStandards
           @indication_xpath = "./cda:entryRelationship[@typeCode='RSON']/cda:observation[cda:templateId/@root='2.16.840.1.113883.10.20.1.28']/cda:code"
           @vehicle_xpath = "cda:participant/cda:participantRole[cda:code/@code='412307009' and cda:code/@codeSystem='2.16.840.1.113883.6.96']/cda:playingEntity/cda:code"
           @fill_number_xpath = "./cda:entryRelationship[@typeCode='COMP']/cda:sequenceNumber/@value"
+          @reason_xpath = "./cda:entryRelationship[@typeCode='RSON']/cda:observation[cda:templateId/@root='2.16.840.1.113883.10.20.24.3.88']/cda:value"
           @entry_class = Medication
         end
 
@@ -38,6 +39,7 @@ module HealthDataStandards
           medication.type_of_medication = extract_code(entry_element, @type_of_med_xpath, 'SNOMED-CT') if @type_of_med_xpath
           medication.indication = extract_code(entry_element, @indication_xpath, 'SNOMED-CT')
           medication.vehicle = extract_code(entry_element, @vehicle_xpath, 'SNOMED-CT')
+          medication.reason = extract_code(entry_element,@reason_xpath)
           
           extract_order_information(entry_element, medication)
           
@@ -48,6 +50,7 @@ module HealthDataStandards
         end
 
         private
+
 
         def extract_fulfillment_history(parent_element, medication)
           fhs = parent_element.xpath("./cda:entryRelationship/cda:supply[@moodCode='EVN']")
